@@ -1,4 +1,5 @@
 import { House, UserRound, CodeXml, Mail, Moon, Icon } from "lucide-react";
+import "./Sidebar.css";
 
 const links = [
     { href: "#inicio", label: "Início", Icon: House },

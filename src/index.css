@@ -109,3 +109,12 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  margin-left: 260px;
+  padding: 48px 40px;
+}
