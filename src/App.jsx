@@ -1,7 +1,14 @@
+import Sidebar from "./components/Sidebar";
+
 function App() {
   return (
-    <h1>Meu portfólio</h1>
-  )
+    <>
+    <Sidebar />
+    <main className="main">
+      <h1>Ranyanna Ayala</h1>
+    </main>
+    </>
+  );
 }
 
-export default App
+export default App;
