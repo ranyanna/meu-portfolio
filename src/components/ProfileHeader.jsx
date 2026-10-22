@@ -1,5 +1,6 @@
 import avatar from "../assets/avatar.jpeg";
 import "./ProfileHeader.css";
+import projects from "../data/projects";
 
 function ProfileHeader() {
     return (
@@ -17,7 +18,7 @@ function ProfileHeader() {
 
                 <div className="profile-stats">
                     <span>
-                        <strong>3</strong> projetos
+                        <strong>{projects.length}</strong> projetos
                     </span>
                     <span>
                         <strong>7</strong> techs
