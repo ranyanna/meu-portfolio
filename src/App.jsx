@@ -1,11 +1,12 @@
 import Sidebar from "./components/Sidebar";
+import ProfileHeader from "./components/ProfileHeader";
 
 function App() {
   return (
     <>
     <Sidebar />
     <main className="main">
-      <h1>Ranyanna Ayala</h1>
+      <ProfileHeader />
     </main>
     </>
   );
