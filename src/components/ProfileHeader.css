@@ -1,0 +1,102 @@
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+
+.profile-avatar {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  padding: 4px;
+  background-color: var(--card);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-name {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.profile-handle {
+  font-family: var(--font-mono);
+  color: var(--accent);
+}
+
+.profile-role {
+  color: var(--muted);
+}
+
+.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.profile-stats strong {
+  color: var(--text);
+}
+
+.profile-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--support);
+}
+
+.profile-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--support);
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+.btn-outline {
+  border-color: var(--border);
+  font-family: var(--font-mono);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
