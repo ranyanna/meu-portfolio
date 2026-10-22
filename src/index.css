@@ -55,3 +55,18 @@ ul {
   margin-left: 260px;
   padding: 48px 40px;
 }
+
+.section {
+  margin-bottom: 96px;
+}
+
+.section-title {
+  margin-bottom: 32px;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section-title span {
+  color: var(--accent);
+}

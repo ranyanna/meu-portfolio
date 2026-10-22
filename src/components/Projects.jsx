@@ -1,6 +1,7 @@
 import projects from "../data/projects";
 import SectionTitle from "./SectionTitle";
 import ProjectCard from "./ProjectCard";
+import "./Projects.css"
 
 function Projects() {
     return (
