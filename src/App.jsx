@@ -1,5 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import ProfileHeader from "./components/ProfileHeader";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
     <Sidebar />
     <main className="main">
       <ProfileHeader />
+      <Projects />
     </main>
     </>
   );
