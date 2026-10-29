@@ -13,7 +13,7 @@ function Sidebar() {
     <aside className="sidebar">
       <a href="#inicio" className="sidebar-logo">
         <span className="sidebar-logo-badge">RA</span>
-        <span className="sidebar-logo-text">ranyanna.dev</span>
+        <span className="sidebar-logo-text">ranyanna</span>
       </a>
 
       <nav aria-label="Navegação principal">

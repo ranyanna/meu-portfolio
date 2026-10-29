@@ -1,13 +1,102 @@
 .about-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-    align-items: start;
-    gap: 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 56px;
 }
 
 .about-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 520px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.about-highlight,
+.about-text strong {
+  color: var(--accent);
+}
+
+.about-text strong {
+  font-weight: 500;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease;
+}
+
+.about-card:hover {
+  border-color: var(--accent);
+}
+
+.about-card-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+}
+
+.about-card-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+.about-card-number::after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background-color: var(--border);
+}
+
+.about-card-title {
+  margin: 6px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.about-card-text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text {
+    max-width: none;
+  }
 }
