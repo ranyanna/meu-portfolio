@@ -1,5 +1,5 @@
 import SectionTitle from "./SectionTitle";
-import TerminalWindow from "./TerminalWindow";
+import "./About.css";
 
 function About() {
   return (
@@ -24,7 +24,6 @@ function About() {
             equipe de forma dedicada.
           </p>
         </div>
-        <TerminalWindow />
       </div>
     </section>
   );
