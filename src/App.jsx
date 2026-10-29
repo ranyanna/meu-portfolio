@@ -2,6 +2,7 @@ import Sidebar from "./components/Sidebar";
 import ProfileHeader from "./components/ProfileHeader";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ProfileHeader />
       <Projects />
       <About />
+      <Skills />
     </main>
     </>
   );
