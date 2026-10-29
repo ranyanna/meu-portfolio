@@ -1,10 +1,11 @@
 const skills = [
-    { name: "HTML", description: "Estrutura semântica", badge: "5"},
-    { name: "CSS", description: "Estilização e layouts", badge: "3"},
-    { name: "JavaScript", description: "Interações e lógica", badge: "JS"},
-    { name: "React", description: "Interfaces com componentes", badge: "R"},
-    { name: "Git", description: "Controle de versão", badge: "Git"},
-    { name: "GitHub", description: "Repositórios e colaboração", badge: "GH"},
+  { name: "HTML", icon: "devicon-html5-plain" },
+  { name: "CSS", icon: "devicon-css3-plain" },
+  { name: "JavaScript", icon: "devicon-javascript-plain" },
+  { name: "React", icon: "devicon-react-original" },
+  { name: "Git", icon: "devicon-git-plain" },
+  { name: "GitHub", icon: "devicon-github-original" },
+  { name: "VS Code", icon: "devicon-vscode-plain" },
 ];
 
 export default skills;

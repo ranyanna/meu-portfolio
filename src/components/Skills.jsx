@@ -3,25 +3,20 @@ import SectionTitle from "./SectionTitle";
 import "./Skills.css";
 
 function Skills() {
-    return (
-        <section id="habilidades" className="section">
-            <SectionTitle>habilidades</SectionTitle>
+  return (
+    <section id="habilidades" className="section">
+      <SectionTitle>habilidades</SectionTitle>
 
-            <ul className="skills-gris">
-                {skills.map((skill) => (
-                    <li key={skill.name} className="skill-card">
-                        <span className="skill-badge" aria-hidden="true">
-                            {skill.badge}
-                        </span>
-                        <div>
-                            <h3 className="skill-name">{skill.name}</h3>
-                            <p className="skill-description">{skill.description}</p>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </section>
-    );
+      <ul className="skills-grid">
+        {skills.map((skill) => (
+          <li key={skill.name} className="skill-card">
+            <i className={`${skill.icon} skill-icon`} aria-hidden="true"></i>
+            <span className="skill-name">{skill.name}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 export default Skills;
