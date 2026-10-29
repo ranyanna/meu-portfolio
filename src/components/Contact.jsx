@@ -4,12 +4,6 @@ import "./Contact.css"
 
 const contacts = [
     {
-        name: "Whatsapp",
-        detail: "Mensagem direta",
-        href: "https://wa.me/5567998255884",
-        icon: <MessageCircle size={22} aria-hidden="true" />,
-    },
-    {
         name: "Email",
         detail: "ranyannayala@gmail.com",
         href: "mailto:ranyannayala@gmail.com",
