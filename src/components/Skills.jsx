@@ -1,5 +1,6 @@
 import skills from "../data/skills";
 import SectionTitle from "./SectionTitle";
+import "./Skills.css";
 
 function Skills() {
     return (
