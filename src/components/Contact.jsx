@@ -1,5 +1,6 @@
 import { Mail, MessageCircle, ArrowUpRight } from "lucide-react";
 import SectionTitle from "./SectionTitle";
+import "./Contact.css"
 
 const contacts = [
     {
