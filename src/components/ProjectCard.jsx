@@ -74,19 +74,6 @@ function ProjectCard({ project }) {
                 ))}
               </div>
             )}
-
-            <div className="project-links">
-              {demoUrl && (
-                <a href={demoUrl} target="_blank" rel="noreferrer">
-                  demo ↗
-                </a>
-              )}
-              {repoUrl && (
-                <a href={repoUrl} target="_blank" rel="noreferrer">
-                  código ↗
-                </a>
-              )}
-            </div>
           </div>
         </div>
       </article>
