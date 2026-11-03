@@ -14,69 +14,83 @@ function ProjectCard({ project }) {
     .map((lang) => `${lang.name} ${lang.percent}%`)
     .join(", ");
 
+  const cardLink = demoUrl || repoUrl;
+
+  const CardWrapper = cardLink ? "a" : "div";
+  const wrapperProps = cardLink
+    ? {
+        href: cardLink,
+        target: "_blank",
+        rel: "noreffer",
+        className: "project-card-link",
+      }
+    : { className: "project-card-link" };
+
   return (
-    <article className="project-card">
-      <div className="window-bar" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <img
-        src={image}
-        alt={`Prévia do projeto ${name}`}
-        className="project-image"
-      />
-
-      <div className="project-body">
-        <div className="project-heading">
-          <h3 className="project-name">{name}</h3>
-          {status && <span className="project-status">{status}</span>}
+    <CardWrapper {...wrapperProps}>
+      <article className="project-card">
+        <div className="window-bar" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
-        <p className="project-description">{description}</p>
+        <img
+          src={image}
+          alt={`Prévia do projeto ${name}`}
+          className="project-image"
+        />
 
-        {tags.length > 0 && (
-          <ul className="project-tags">
-            {tags.map((tag) => (
-              <li key={tag} className="project-tag">
-                {tag}
-              </li>
-            ))}
-          </ul>
-        )}
+        <div className="project-body">
+          <div className="project-heading">
+            <h3 className="project-name">{name}</h3>
+            {status && <span className="project-status">{status}</span>}
+          </div>
 
-        <div className="project-footer">
-          {languages.length > 0 && (
-            <div
-              className="language-bar"
-              role="img"
-              aria-label={languagesLabel}
-            >
-              {languages.map((lang) => (
-                <span
-                  key={lang.name}
-                  style={{ width: `${lang.percent}%` }}
-                ></span>
+          <p className="project-description">{description}</p>
+
+          {tags.length > 0 && (
+            <ul className="project-tags">
+              {tags.map((tag) => (
+                <li key={tag} className="project-tag">
+                  {tag}
+                </li>
               ))}
-            </div>
+            </ul>
           )}
 
-          <div className="project-links">
-            {demoUrl && (
-              <a href={demoUrl} target="_blank" rel="noreferrer">
-                demo ↗
-              </a>
+          <div className="project-footer">
+            {languages.length > 0 && (
+              <div
+                className="language-bar"
+                role="img"
+                aria-label={languagesLabel}
+              >
+                {languages.map((lang) => (
+                  <span
+                    key={lang.name}
+                    style={{ width: `${lang.percent}%` }}
+                  ></span>
+                ))}
+              </div>
             )}
-            {repoUrl && (
-              <a href={repoUrl} target="_blank" rel="noreferrer">
-                código ↗
-              </a>
-            )}
+
+            <div className="project-links">
+              {demoUrl && (
+                <a href={demoUrl} target="_blank" rel="noreferrer">
+                  demo ↗
+                </a>
+              )}
+              {repoUrl && (
+                <a href={repoUrl} target="_blank" rel="noreferrer">
+                  código ↗
+                </a>
+              )}
+            </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </CardWrapper>
   );
 }
 
