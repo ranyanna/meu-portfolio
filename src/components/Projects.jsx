@@ -5,7 +5,7 @@ import "./Projects.css"
 
 function Projects() {
     return (
-        <section id="porjetos" className="section">
+        <section id="projetos" className="section">
             <SectionTitle>projetos</SectionTitle>
             <div className="projects-grid">
                 {projects.map((project) => (

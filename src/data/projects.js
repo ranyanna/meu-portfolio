@@ -1,7 +1,6 @@
 import orbitImage from "../assets/projects/orbit.png";
 import anibooImage from "../assets/projects/aniboo.png";
 import moodboardImage from "../assets/projects/moodboard.png";
-import { Languages } from "lucide-react";
 
 const projects = [
     {
